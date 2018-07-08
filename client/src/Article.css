@@ -1,0 +1,64 @@
+article.tweet {
+  border: 1px solid silver;
+  margin: 2em;
+  border-radius: 15px;
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+article.tweet header {
+  border-bottom: 1px solid silver;
+  padding: 0.5em;
+  background-color: whitesmoke;
+}
+
+article.tweet header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  float: left;
+}
+
+article.tweet header h3 {
+  margin: 0;
+  float: left;
+  margin-left: 0.5em;
+  font-size: 1.3em;
+  line-height: 3.5em;
+}
+
+article.tweet header h4 {
+  margin: 0;
+  float: right;
+  font-weight: 300;
+  line-height: 4em;
+  font-size: 1.1em;
+}
+
+article .content {
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+
+article footer {
+  border-top: 1px solid silver;
+}
+
+article footer .time-stamp {
+  float: left;
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+
+article footer .icons {
+  float: right;
+  margin-right: 0.5em;
+  line-height: 3em;
+  font-size: 1.2em;
+  color: #00a087;
+  opacity: 0;
+}
+
+article footer .fas {
+  margin-left: 0.2em;
+}
