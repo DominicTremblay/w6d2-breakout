@@ -5,7 +5,10 @@ import NewTweet from "./newtweet";
 import AllTweets from "./AllTweets";
 
 class App extends Component {
-  state = { tweets: [] };
+  constructor(props) {
+    super(props);
+    this.state = { tweets: [] };
+  }
 
   componentDidMount() {
     fetch("/tweets")

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./NewTweet.css";
+import PropTypes from "prop-types";
 
 class NewTweet extends Component {
   constructor(props) {
@@ -12,11 +13,13 @@ class NewTweet extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    const counter = e.target.lastElementChild;
     const content = e.target.text.value;
     if (content) {
       this.props.postTweet(content);
       e.target.text.value = "";
       e.target.text.focus();
+      counter.textContent = this.state.maxChar;
     } else {
       document.querySelector(".error-msg").innerText = "Please, enter a tweet!";
       e.target.text.focus();
@@ -52,5 +55,9 @@ class NewTweet extends Component {
     );
   }
 }
+
+NewTweet.propTypes = {
+  postTweet: PropTypes.func.isRequired
+};
 
 export default NewTweet;

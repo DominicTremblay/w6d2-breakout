@@ -9,6 +9,7 @@
   "author": "Dominic Tremblay",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^2.6.1"
+    "ejs": "^2.6.1",
+    "prop-types": "^15.6.2"
   }
 }

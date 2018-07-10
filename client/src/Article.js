@@ -1,5 +1,6 @@
 import React from "react";
 import "./Article.css";
+import PropTypes from "prop-types";
 
 const Article = props => {
   const {
@@ -41,6 +42,19 @@ const Article = props => {
       </footer>
     </article>
   );
+};
+
+Article.propTypes = {
+  content: PropTypes.shape({
+    text: PropTypes.string
+  }),
+  user: PropTypes.shape({
+    name: PropTypes.string,
+    handle: PropTypes.string,
+    avatars: PropTypes.shape({
+      regular: PropTypes.string
+    })
+  })
 };
 
 export default Article;
