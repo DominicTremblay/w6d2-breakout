@@ -74,3 +74,13 @@ this.someFunction = this.someFunction.bind(this);
 ## Add CSS to React
 
 - Ideally, components should be self contained. CSS rules are added to each component.
+
+## Running the App
+
+- After cloning the repo, run npm install
+- To run the app, you have to run the client and the server each in their own terminal window
+
+1.  cd server && node app.js
+2.  cd client && npm start
+
+- The app will use your Tweeter MongoDB
