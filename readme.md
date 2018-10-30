@@ -13,7 +13,7 @@
 
 ## Class vs Stateless Components
 
-- If you component doesn't need to maintain any state, you should use a stateless component. It's cleaner and you don't need to mess around with `this`.
+- If your component doesn't need to maintain any state, you should use a stateless component. It's cleaner and you don't need to mess around with `this`.
 - Do use a class whenever your component needs to manage the state.
 
 ## Dataflow
@@ -29,8 +29,8 @@
 
 We have few ways to bind functions in ReactJS. The most usual ones are these 2:
 
-1.  Bind functions in the constructor
-2.  Use Arrow functions as class properties
+1. Bind functions in the constructor
+2. Use Arrow functions as class properties
 
 ## Binding functions in the constructor
 
@@ -78,7 +78,7 @@ this.someFunction = this.someFunction.bind(this);
 ## Running the App
 
 - After cloning the repo, run npm install
-- To run the app, you have to run the client and the server each in their own terminal window
+- To run the app, you have to run both the client and the server each in their own terminal window
 
 1.  cd server && node app.js
 2.  cd client && npm start
