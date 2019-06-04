@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import "./App.css";
-import NavBar from "./navbar";
-import NewTweet from "./newtweet";
-import AllTweets from "./AllTweets";
+import React, { Component } from 'react';
+import './App.css';
+import NavBar from './navbar';
+import NewTweet from './newtweet';
+import AllTweets from './AllTweets';
 
 class App extends Component {
   constructor(props) {
@@ -11,16 +11,16 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("/tweets")
+    fetch('http:///localhost:8080/tweets')
       .then(res => res.json())
       .then(tweets => this.setState({ tweets }));
   }
 
   postTweet = content => {
-    fetch("http://localhost:8080/tweets", {
-      method: "post",
+    fetch('http://localhost:8080/tweets', {
+      method: 'post',
       headers: {
-        "Content-Type": "application/json; charset=utf-8"
+        'Content-Type': 'application/json; charset=utf-8'
       },
       body: JSON.stringify({ text: content })
     })

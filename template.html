@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="App">
+    <nav id="nav-bar"><img class="logo" src="/images/bird.png" alt="logo"><span class="header">Tweeter</span></nav>
+    <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <div class="error-msg"></div>
+        <form class="clearfix"><textarea name="text" placeholder="What are you humming about?"></textarea><input
+            type="submit" value="Tweet"><span class="counter">140</span></form>
+      </section>
+      <section id="all-tweets">
+        <article class="tweet" style="opacity: 0.6;">
+          <header class="clearfix"><img src="https://vanillicon.com/516f336b929ee859f2b7bb76a1d7a95a.png" alt="avatar">
+            <h3>Gary Santini</h3>
+            <h4>@MrSantini9</h4>
+          </header>
+          <div class="content">Hey everyone. New project yeah!</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons" style="opacity: 0;"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i
+                class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/21108fd8fba837a6f5788b4d83cc2486.png" alt="avatar">
+            <h3>David Hara</h3>
+            <h4>@MrHara21</h4>
+          </header>
+          <div class="content">Hello</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/bfd035683c22a87adcd1c12d38748af9.png" alt="avatar">
+            <h3>Jason Mattei</h3>
+            <h4>@DrMattei53</h4>
+          </header>
+          <div class="content">Hey everyone. Good morning!</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/c9e9478fefa6908dce985b9f0ad6415b.png" alt="avatar">
+            <h3>Scott Kwakman</h3>
+            <h4>@DrKwakman66</h4>
+          </header>
+          <div class="content">I'll be back!</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/37d5c24b693dbff0252a3b853ab74bc5.png" alt="avatar">
+            <h3>Mabelle Ciapetti</h3>
+            <h4>@Ciapetti43</h4>
+          </header>
+          <div class="content">"My precious."</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/9a2f7944e71e248b6911bcaf7bfffb4d.png" alt="avatar">
+            <h3>Johnny Figueroa</h3>
+            <h4>@DrFigueroa</h4>
+          </header>
+          <div class="content">I am not a number. I am a free man.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/1b7ab63b4caeb38af175dc6f277d6016.png" alt="avatar">
+            <h3>Elva Robinson</h3>
+            <h4>@Robinson62</h4>
+          </header>
+          <div class="content">May the force be with you</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/d68cb21aec797a6ff78288020097093b.png" alt="avatar">
+            <h3>Harriet Cook</h3>
+            <h4>@Cook</h4>
+          </header>
+          <div class="content">hey</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/74d89f7f85a0028d4233b4bed38ef7c6.png" alt="avatar">
+            <h3>Danny Russo</h3>
+            <h4>@Russo13</h4>
+          </header>
+          <div class="content">Awesome</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/132924fea69a283fb0bbe415ecc86ae0.png" alt="avatar">
+            <h3>Callie Kobayashi</h3>
+            <h4>@Kobayashi</h4>
+          </header>
+          <div class="content">msfns,mf</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/18443058bbee17b814e9e0fb9e8991d1.png" alt="avatar">
+            <h3>Lawrence Leclercq</h3>
+            <h4>@MrLeclercq93</h4>
+          </header>
+          <div class="content">nfsnfsf</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/93412208a20e09c92cc4c09776cb65af.png" alt="avatar">
+            <h3>Brian Norris</h3>
+            <h4>@Norris34</h4>
+          </header>
+          <div class="content">kjglkajgkla</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/8b3f179be2b08af3f33fdbf0b838df45.png" alt="avatar">
+            <h3>Louis Fattori</h3>
+            <h4>@Fattori64</h4>
+          </header>
+          <div class="content">hflshflafl</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/8bdcde4d4237728f749ad4df03529218.png" alt="avatar">
+            <h3>Nannie Mulder</h3>
+            <h4>@MissMulder30</h4>
+          </header>
+          <div class="content">ffwfwf</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/50bcbdf18b7c80580cc9f34389eb93e6.png" alt="avatar">
+            <h3>Jacob Begum</h3>
+            <h4>@Begum</h4>
+          </header>
+          <div class="content">kfnwlkfwnklg</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/6635d921f459128effc09105a5a67b0f.png" alt="avatar">
+            <h3>Beatrice Morley</h3>
+            <h4>@MissMorley7</h4>
+          </header>
+          <div class="content">wfswfwfwfwf</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/69a67271e4f64b72da92635305353eb1.png" alt="avatar">
+            <h3>Lucas Clarke</h3>
+            <h4>@Clarke</h4>
+          </header>
+          <div class="content">klsflkwfklwefhlq</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/ddd61a8c1837e36be15b465731c20ce1.png" alt="avatar">
+            <h3>Gregory Akhtar</h3>
+            <h4>@Akhtar</h4>
+          </header>
+          <div class="content">
+  
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis architecto rem totam ipsa neque,
+            reprehenderit possimus nobis perferendis libero odit dignissimos vitae qui cupiditate quia similique aperiam
+            nulla, asperiores est.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/e6a6c4035239fabf9a3d452e8efd4087.png" alt="avatar">
+            <h3>Chris Watts</h3>
+            <h4>@Watts11</h4>
+          </header>
+          <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis architecto rem totam ipsa neque,
+            reprehenderit possimus nobis perferendis libero odit dignissimos vitae qui cupiditate quia similique aperiam
+            nulla, asperiores est.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/1c7d94ec39d66250141a5e2a06fe0ab5.png" alt="avatar">
+            <h3>Lulu Dumas</h3>
+            <h4>@MrsDumas90</h4>
+          </header>
+          <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis architecto rem totam ipsa neque,
+            reprehenderit possimus nobis perferendis libero odit dignissimos vitae qui cupiditate quia similique aperiam
+            nulla, asperiores est.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/034edef0baf0aea292798532bf813b73.png" alt="avatar">
+            <h3>Bernice Del Re</h3>
+            <h4>@MrsDel Re</h4>
+          </header>
+          <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis architecto rem totam ipsa
+            neque, reprehenderit possimus nobis perferendis libero odit dignissimos vitae qui cupiditate quia similique
+            aperiam nulla, asperiores est.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/a30064ae5633f02774bd4721f670052f.png" alt="avatar">
+            <h3>Cameron Tilli</h3>
+            <h4>@Tilli</h4>
+          </header>
+          <div class="content">Hello my friend</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/8b9d2d0b490c5620dd36ca471c3d0bdb.png" alt="avatar">
+            <h3>Mamie Bonciani</h3>
+            <h4>@MissBonciani15</h4>
+          </header>
+          <div class="content">Hasta la vista baby!</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/50dd24b7d23409a69fed48470a83bd7e.png" alt="avatar">
+            <h3>Myrtie van der Meer</h3>
+            <h4>@Drvan der Meer</h4>
+          </header>
+          <div class="content">…Reverse the polarity of the neutron flow.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/644555ba71c3cd5ee3542b8fbdef83e8.png" alt="avatar">
+            <h3>Angel Bell</h3>
+            <h4>@Bell87</h4>
+          </header>
+          <div class="content">I am NOT a merry man!!!</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/9c8369ee9783596370375bb1646b6629.png" alt="avatar">
+            <h3>Luis Cresti</h3>
+            <h4>@MrCresti67</h4>
+          </header>
+          <div class="content">I am not a number. I am a free man.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/54d909469028962128b8d00950696f18.png" alt="avatar">
+            <h3>Georgia Cruz</h3>
+            <h4>@Cruz12</h4>
+          </header>
+          <div class="content">You'll understand soon enough that there are consequences to being chosen. Because destiny,
+            John, is a fickle bitch.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/89c45111a1e515359c8be819cf5e9530.png" alt="avatar">
+            <h3>Christopher Pool</h3>
+            <h4>@MrPool30</h4>
+          </header>
+          <div class="content">The truth is usually just an excuse for a lack of imagination.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/3997ffdd7f51d0da4ff329234ed7e386.png" alt="avatar">
+            <h3>Ronald Fuller</h3>
+            <h4>@Fuller11</h4>
+          </header>
+          <div class="content">Speak Friend and Enter</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/bebe7c8a1d663ba4390f9ce58f02af77.png" alt="avatar">
+            <h3>Leon Miura</h3>
+            <h4>@Miura51</h4>
+          </header>
+          <div class="content">The needs of the many outweigh ... the needs of the few... Or the one.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/6c382ae7928f6e9cf36da494f556de45.png" alt="avatar">
+            <h3>Ann Pecchioli</h3>
+            <h4>@DrPecchioli</h4>
+          </header>
+          <div class="content">I'll be back.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/89915cdebf289a04393548c120243002.png" alt="avatar">
+            <h3>Stephen Griffin</h3>
+            <h4>@Griffin8</h4>
+          </header>
+          <div class="content">I wish the ring had never come to me</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/434faa3da113427322791ddb0214b73f.png" alt="avatar">
+            <h3>Eleanor Ross</h3>
+            <h4>@DrRoss6</h4>
+          </header>
+          <div class="content">I wish the ring had never come to me. I wish none of this had happened.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/f810d5bb788a030ea989e1d1667209e5.png" alt="avatar">
+            <h3>Stanley Estrada</h3>
+            <h4>@DrEstrada</h4>
+          </header>
+          <div class="content">YOU SHALL NOT PASS!</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/e497958e4a183f340efffa6d478ec2bf.png" alt="avatar">
+            <h3>Elijah Mariani</h3>
+            <h4>@DrMariani</h4>
+          </header>
+          <div class="content">I am one with the Force, the Force is with me.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/f306b46772f4e46281cf06ce503cd164.png" alt="avatar">
+            <h3>Barbara Schofield</h3>
+            <h4>@DrSchofield</h4>
+          </header>
+          <div class="content">I volunteer as tribute!</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/ea1c8a081c67501486b87b50d5708fbd.png" alt="avatar">
+            <h3>Jason Fioravanti</h3>
+            <h4>@DrFioravanti5</h4>
+          </header>
+          <div class="content">I am Groot.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/c0ed9a43be8164d347ce74e2a775171f.png" alt="avatar">
+            <h3>Agnes Pickering</h3>
+            <h4>@DrPickering54</h4>
+          </header>
+          <div class="content">What a day. What a lovely day!</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/62cbd2994baf14bb00995187c2f7ab78.png" alt="avatar">
+            <h3>Eleanor van Loon</h3>
+            <h4>@Missvan Loon</h4>
+          </header>
+          <div class="content">It's called a hustle, sweetheart.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/98ee2168e012fa54f4c79d7dcafc0e3b.png" alt="avatar">
+            <h3>Lottie Shelton</h3>
+            <h4>@Shelton11</h4>
+          </header>
+          <div class="content">Be careful not to choke on your aspirations, Director.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/2a532bf66a1c37eee4bc3740986d7697.png" alt="avatar">
+            <h3>Delia Thornton</h3>
+            <h4>@Thornton87</h4>
+          </header>
+          <div class="content">The greatest teacher, failure is.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/4546c50bac1e680375f2a42872bdeac8.png" alt="avatar">
+            <h3>Emily Grant</h3>
+            <h4>@Grant52</h4>
+          </header>
+          <div class="content">"Fish are friends, not food."</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/b01fdc124cd27c074aaae974d6546f23.png" alt="avatar">
+            <h3>Ralph Sarti</h3>
+            <h4>@DrSarti</h4>
+          </header>
+          <div class="content">"I am your father."</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/eb99675c65d63369a16fa2285fe2c7bf.png" alt="avatar">
+            <h3>Barry Bouwman</h3>
+            <h4>@MrBouwman</h4>
+          </header>
+          <div class="content">"My precious."</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/a8d787fdda8bfccd6364227d2cb75b1e.png" alt="avatar">
+            <h3>Garrett Gabbrielli</h3>
+            <h4>@Gabbrielli90</h4>
+          </header>
+          <div class="content">Chewie, we're home.</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header class="clearfix"><img src="https://vanillicon.com/5b0a61b2cd4bd3816ba9f11a2209a752.png" alt="avatar">
+            <h3>Earl Ventura</h3>
+            <h4>@DrVentura4</h4>
+          </header>
+          <div class="content">Why so serious?</div>
+          <footer class="clearfix">
+            <p class="time-stamp">10 days ago</p>
+            <div class="icons"><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></div>
+          </footer>
+        </article>
+      </section>
+    </main>
+  </div>
+  
+</body>
+</html>
