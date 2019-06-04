@@ -17,7 +17,8 @@ class NewTweet extends Component {
   handleKeyDown = event => {
     if (event.key === 'Enter') {
       // need to send the content to App
-      console.log(this.state.content);
+      this.props.addNewTweet(this.state.content);
+      this.setState({ content: '' });
     }
   };
 

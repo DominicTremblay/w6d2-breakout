@@ -35,7 +35,7 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <main className="container">
-          <NewTweet />
+          <NewTweet addNewTweet={this.addNewTweet} />
           <AllTweets tweets={this.state.tweets} />
         </main>
       </div>
