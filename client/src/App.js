@@ -15,8 +15,20 @@ class App extends Component {
 
   addNewTweet = content => {
     // Create a post request to the back end
-    // Back end is sending back the full tweet object
-    // Update the state with the new tweet object
+    fetch('http://localhost:8080/tweets', {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+      },
+      body: JSON.stringify({ text: content }),
+    })
+      .then(response => response.json())
+      // Back end is sending back the full tweet object
+      .then(tweet => {
+        // Update the state with the new tweet object
+        this.setState({ tweets: [tweet, ...this.state.tweets] });
+      })
+      .catch(error => console.error(`Fetch Error =\n`, error));
   };
 
   componentDidMount() {
