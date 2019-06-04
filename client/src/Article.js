@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 
 const Article = props => {
   return (
-    <article className="tweet">
+    <article className="tweet" data-id="id">
       <header className="clearfix">
-        <img src="" alt="avatar" />
-        <h3>Name</h3>
-        <h4>Handle</h4>
+        <img src={props.user.avatars.small} alt="avatar" />
+        <h3>{props.user.name}</h3>
+        <h4>{props.user.handle}</h4>
       </header>
 
-      <div className="content">Content</div>
+      <div className="content">{props.content.text}</div>
 
       <footer className="clearfix">
         <p className="time-stamp">10 days ago</p>
@@ -23,6 +23,12 @@ const Article = props => {
       </footer>
     </article>
   );
+};
+
+Article.propTypes = {
+  id: PropTypes.string,
+  content: PropTypes.object,
+  user: PropTypes.object,
 };
 
 export default Article;

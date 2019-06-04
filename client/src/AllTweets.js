@@ -3,12 +3,17 @@ import './AllTweets.css';
 import Article from './Article';
 import PropTypes from 'prop-types';
 
-const AllTweets = props => {
-  return (
-    <section id="all-tweets">
-      <Article />
-    </section>
-  );
+const AllTweets = ({ tweets }) => {
+  const tweetList = tweets.map(tweetObj => (
+    <Article
+      key={tweetObj._id}
+      id={tweetObj._id}
+      user={tweetObj.user}
+      content={tweetObj.content}
+    />
+  ));
+
+  return <section id="all-tweets">{tweetList}</section>;
 };
 
 AllTweets.propTypes = {
