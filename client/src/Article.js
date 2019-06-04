@@ -1,36 +1,17 @@
-import React from "react";
-import "./Article.css";
-import PropTypes from "prop-types";
+import React from 'react';
+import './Article.css';
+import PropTypes from 'prop-types';
 
 const Article = props => {
-  const {
-    user: {
-      name,
-      handle,
-      avatars: { regular }
-    },
-    content: { text }
-  } = props;
-
-  const hover = e => {
-    e.currentTarget.style.opacity = 1;
-    e.currentTarget.lastElementChild.lastElementChild.style.opacity = 1;
-  };
-
-  const hoverReset = e => {
-    e.currentTarget.style.opacity = 0.6;
-    e.currentTarget.lastElementChild.lastElementChild.style.opacity = 0;
-  };
-
   return (
-    <article className="tweet" onMouseEnter={hover} onMouseLeave={hoverReset}>
+    <article className="tweet">
       <header className="clearfix">
-        <img src={regular} alt="avatar" />
-        <h3>{name}</h3>
-        <h4>{handle}</h4>
+        <img src="" alt="avatar" />
+        <h3>Name</h3>
+        <h4>Handle</h4>
       </header>
 
-      <div className="content">{text}</div>
+      <div className="content">Content</div>
 
       <footer className="clearfix">
         <p className="time-stamp">10 days ago</p>
@@ -42,19 +23,6 @@ const Article = props => {
       </footer>
     </article>
   );
-};
-
-Article.propTypes = {
-  content: PropTypes.shape({
-    text: PropTypes.string
-  }),
-  user: PropTypes.shape({
-    name: PropTypes.string,
-    handle: PropTypes.string,
-    avatars: PropTypes.shape({
-      regular: PropTypes.string
-    })
-  })
 };
 
 export default Article;
